@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhando no Canvas</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Desenhando no Canvas</h1>
+    
+
+    <canvas id="canvas" width="800" height="400"></canvas>
+
+    <div class="colorArea">
+        <div data-color="#000000" style="background-color: #000000" class="color active"></div>
+        <div data-color="#ff0000" style="background-color: #ff0000" class="color "></div>
+        <div data-color="#fff200" style="background-color: #fff200" class="color "></div>
+        <div data-color="#2b00ff" style="background-color: #2b00ff" class="color "></div>
+        <div data-color="#00e1ff" style="background-color: #00e1ff" class="color "></div>
+        <div data-color="#00ff22" style="background-color: #00ff22" class="color "></div>
+        <div data-color="#ffffff" style="background-color: #ffffff" class="color "></div>
+        <div data-color="#858585" style="background-color: #858585" class="color "></div>
+        <div data-color="#ed8e00" style="background-color: #ed8e00" class="color "></div>
+        <div data-color="#ff00ea" style="background-color: #ff00ea" class="color "></div>
+    </div>
+    
+    <div class="limpar">
+        <form id="escolher-cor">
+            <label for="escoler-cor">Escolha uma cor</label>
+            <input type="color" id="ecolher-cor">
+            <button type="submit">adicionar</button>
+        </form>
+        <form id="input-espesura">
+            <label for="espesura-linha">espesura da linha</label>
+            <input type="number" id="espesura-linha" placeholder="5">
+        </form>
+        <button class="clear-canvas">Limpar Quadro</button>
+    </div>
+
+
+
+
+    <script src="cores.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
